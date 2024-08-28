@@ -523,3 +523,44 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+.logo-alter {
+    display: flex;
+    align-items: center;
+}
+
+.logo-alter-corchetes {
+    font-family: "Montserrat", sans-serif;
+    /* color: #ffffff; */
+    color: #bdc3c7;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.logo-alter-webservice {
+    font-family: "Montserrat", sans-serif;
+    /* color: #ffffff; */
+    color: #2c3e50;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.logo-alter-js {
+    font-family: "Montserrat", sans-serif;
+    color: #27ae60;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.logo-alter-corchetes.change-color {
+    color: #bdc3c7;
+}
+
+.logo-alter-webservice.change-color {
+    color: #2c3e50;
+}
+
+.logo-alter-js.change-color {
+    color: #27ae60;
+}

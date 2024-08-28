@@ -20,8 +20,14 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('sticky-top shadow-sm');
+            $('.logo-alter-webservice').addClass('change-color');
+            $('.logo-alter-js').addClass('change-color');
+            $('.logo-alter-corchetes').addClass('change-color');
         } else {
             $('.navbar').removeClass('sticky-top shadow-sm');
+            $('.logo-alter-webservice').removeClass('change-color');
+            $('.logo-alter-js').removeClass('change-color');
+            $('.logo-alter-corchetes').removeClass('change-color');
         }
     });
     
