@@ -116,3 +116,53 @@ $(window).scroll(function () {
     
 })(jQuery);
 
+document.addEventListener("scroll", function() {
+    let scrollPos = window.scrollY || document.documentElement.scrollTop;
+    const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const heroHeader = document.querySelector('.hero-header');
+    let activeFound = false;
+
+    // Primero, verifica si el usuario está en la parte superior, activando "Home"
+    if (heroHeader && scrollPos < heroHeader.offsetHeight) {
+        navbarLinks.forEach(link => {
+            if (link.getAttribute("href") === "index.html" || link.getAttribute("href") === "" || link.getAttribute("href") === "#") {
+                link.classList.add("active");
+                activeFound = true;
+            } else {
+                link.classList.remove("active");
+            }
+        });
+    } else {
+        navbarLinks.forEach(link => {
+            const href = link.getAttribute("href");
+
+            if (href && href.startsWith("#") && href.length > 1) {
+                const section = document.querySelector(href);
+
+                if (section) {
+                    if (
+                        section.offsetTop <= scrollPos + 50 &&
+                        section.offsetTop + section.offsetHeight > scrollPos + 50
+                    ) {
+                        navbarLinks.forEach(link => link.classList.remove("active"));
+                        link.classList.add("active");
+                        activeFound = true;
+                    } else {
+                        link.classList.remove("active");
+                    }
+                }
+            }
+        });
+    }
+
+    // Si no se encontró ninguna sección activa y no está en la parte superior
+    if (!activeFound) {
+        navbarLinks.forEach(link => {
+            if (link.getAttribute("href") === "index.html" || link.getAttribute("href") === "") {
+                link.classList.add("active");
+            } else {
+                link.classList.remove("active");
+            }
+        });
+    }
+});

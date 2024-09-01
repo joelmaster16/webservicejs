@@ -96,7 +96,7 @@ h6,
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--secondary) !important;
+    color: #27ae60 !important;
 }
 
 .navbar-light .navbar-brand h1 {
@@ -148,7 +148,7 @@ h6,
         border-bottom: 1px solid rgba(256, 256, 256, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: #FFFFFF;
@@ -161,7 +161,7 @@ h6,
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--secondary);
+        background: #27ae60;
         transition: .5s;
     }
 
@@ -184,11 +184,11 @@ h6,
 /*** Hero Header ***/
 .hero-header {
     background:
-        url(../img/bg-dot.png),
-        url(../img/bg-dot.png),
+        url(../img/bg-dot2.png),
+        url(../img/bg-dot2.png),
         url(../img/bg-round.png),
         url(../img/bg-tree.png),
-        url(../img/bg-bottom-hero.png);
+        url(../img/bg-bottom-hero2.png);
     background-position:
         10px 10px,
         bottom 190px right 10px,
@@ -523,6 +523,7 @@ h6,
     padding-right: 0;
     border-right: none;
 }
+
 .logo-alter {
     display: flex;
     align-items: center;
