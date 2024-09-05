@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #2124B1;
+    --primary: #27ae60;
     --secondary: #4777F5;
     --light: #2b2b2b;
     --dark: #000000;
@@ -238,7 +238,7 @@ h6,
     height: 10px;
     top: 2px;
     left: 0;
-    background: rgba(33, 66, 177, .5);
+    background: rgba(36, 179, 107, 0.5);
 }
 
 .section-title h6::after {
@@ -268,8 +268,8 @@ h6,
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--light);
-    background: url(../img/icon-shape-primary.png) center center no-repeat;
+    color: white;
+    background: url(../img/icon-shape-primary2.png) center center no-repeat;
     transition: .5s;
 }
 
@@ -285,7 +285,7 @@ h6,
 
 .service-item:hover h5,
 .service-item:hover p {
-    color: var(--light);
+    color: white;
 }
 
 .service-item a.btn {
@@ -315,7 +315,7 @@ h6,
 
 .service-item:hover a.btn::before {
     width: 100%;
-    background: var(--light);
+    background: white;
 }
 
 
@@ -342,7 +342,7 @@ h6,
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item * {
-    color: #888888;
+    color: #d4d4d4;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item i {
@@ -410,9 +410,15 @@ h6,
 
 #portfolio-flters .btn:hover,
 #portfolio-flters .btn.active {
-    color: var(--light);
+    color: white;
     background: var(--primary);
 }
+
+.portfolio-item * {
+    color: rgb(238, 237, 237);
+}
+
+
 
 .portfolio-overlay {
     position: absolute;
@@ -424,11 +430,12 @@ h6,
     padding: 30px;
     top: 0;
     left: 0;
-    background: var(--primary);
+    background: var(--primary) !important;
     transition: .5s;
     z-index: 1;
     opacity: 0;
 }
+
 
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
