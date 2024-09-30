@@ -3057,6 +3057,8 @@ textarea.form-control.is-invalid {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out
 }
 
+
+
 @media (prefers-reduced-motion: reduce) {
     .btn {
         transition: none
@@ -4453,6 +4455,28 @@ fieldset:disabled .btn {
     margin-right: 1rem;
     font-size: 1.25rem;
     white-space: nowrap
+}
+
+.navbar-brand img {
+    max-width: 600px;
+}
+
+@media (max-width: 1247px) {
+    .navbar-brand img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 468px) {
+    .navbar-brand img {
+        max-width: 250px;
+    }
 }
 
 .navbar-nav {
@@ -8071,6 +8095,28 @@ fieldset:disabled .btn {
     padding-bottom: 3rem !important
 }
 
+
+
+@media (max-width: 992px) {
+    .hero-header .py-5 {
+        margin-top: -4rem !important;
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important
+    }
+
+    .img-head {
+        --bs-gutter-y: 0rem !important;
+    }
+}
+
+@media (max-width: 400px) {
+
+
+    .img-head {
+        --bs-gutter-y: 3rem !important;
+    }
+}
+
 .pt-0 {
     padding-top: 0 !important
 }
@@ -8317,12 +8363,16 @@ fieldset:disabled .btn {
 }
 
 
+.contact-btn {
+    color: white !important;
+}
+
 .text-dark {
-    color: #1D1D27 !important
+    color: #2c3e50 !important
 }
 
 .text-white {
-    color: #3d3d4f !important
+    color: white !important
 }
 
 .text-body {
