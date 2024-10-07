@@ -272,12 +272,14 @@ h6,
     justify-content: center;
     color: white;
     background: url(../img/icon-shape-primary2.png) center center no-repeat;
+    background-size: contain;
     transition: .5s;
 }
 
 .service-item:hover .service-icon {
     color: var(--primary);
-    background: url(../img/icon-shape-white.png);
+    background: url(../img/icon-shape-white.png) center center no-repeat;
+    background-size: contain;
 }
 
 .service-item h5,
