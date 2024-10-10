@@ -3,7 +3,7 @@
     --primary: #27ae60;
     --secondary: #4777F5;
     --light: #2b2b2b;
-    --dark: #000000;
+    --dark: #2c3e50;
 }
 
 
@@ -272,12 +272,14 @@ h6,
     justify-content: center;
     color: white;
     background: url(../img/icon-shape-primary2.png) center center no-repeat;
+    background-size: contain;
     transition: .5s;
 }
 
 .service-item:hover .service-icon {
     color: var(--primary);
-    background: url(../img/icon-shape-white.png);
+    background: url(../img/icon-shape-white.png) center center no-repeat;
+    background-size: contain;
 }
 
 .service-item h5,
@@ -453,6 +455,7 @@ h6,
     align-items: center;
     justify-content: center;
     background: url(../img/icon-shape-white.png) center center no-repeat;
+    background-size: contain;
     border: none;
     transition: .5s;
     opacity: 0;
